@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.youth.banner.Banner
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/fragment_things_banner"></com.youth.banner.Banner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/fragment_things_title"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_things_banner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="传值"
+        android:id="@+id/fragment_things_btn_intent"
+        />
+
+</android.support.constraint.ConstraintLayout>
